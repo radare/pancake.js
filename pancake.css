@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Graublau Sans Web;
+  src: url(GraublauWeb.otf) format("opentype");
+}
+
+ul {
+  list-style-type: square;
+  padding-left:20px;
+}
+ 
+li {
+  color: black;
+  font-size: 1.2em;
+}
+body {
+  font-family: Graublau Sans Web, Lucida Grande, sans-serif; 
+  margin: 0px;
+  background-color: white;
+}
+
+h1 {
+  box-shadow: 0px 5px 5px #d0d0d0;
+  width: 100%;
+  margin:0px;
+  padding-left:4px;
+  padding-bottom:4px;
+}
+
+html {
+  font-size: 10px;
+  font-family: Arial, Verdana;
+  overflow-x: hidden;
+}
+
+.P_rightbutton:hover{
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.P_rightbutton {
+  text-align:center;
+  position:relative;
+  float:right;
+  padding-bottom:4px;
+  padding-left:8px;
+  padding-right:8px;
+  background-color: #d0d0d0;
+  border-color: black;
+  border-width: 1px;
+  align:right;
+}
+
+.buttonSingle {
+  box-align:center;
+  width:90%;
+}
+
+p {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+button:hover {
+  background-color: #c0c0c0;
+}
+button {
+  background-color: #5CFF5C;
+  border: 20px;
+  padding: 4px;
+  margin:4px;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius:1rem;
+}
+
+hbuttonbox {
+  text-align:center;
+  width: 100%;
+}
+
+.buttonOk {
+  background-color: #5CFF5C;
+}
+
+.buttonCancel {
+  background-color: #FF4747;
+}

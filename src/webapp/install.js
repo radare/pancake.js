@@ -1,21 +1,17 @@
-/* 
-        <script defer id="install" src="install.js"
-                manifest="http://radare.org/manifest.webapp"
-                packaged="false"></script>
-*/
 (function () {
+	// <script defer id="install" src="install.js"
+	//   manifest="http://radare.org/manifest.webapp"
+	//   packaged="false"></script>
 	var ins = undefined;
 	var scripts = document.getElementsByTagName ("script");
-	if (!scripts)
-		return;
-	for (var i = 0; i<scripts.length; i++) {
-		if ("install.js" == scripts[i].getAttribute("src")) {
-			ins = scripts[i];
-			break;
+	if (scripts)
+		for (var i = 0; i<scripts.length; i++) {
+			if ("install.js" == scripts[i].getAttribute("src")) {
+				ins = scripts[i];
+				break;
+			}
 		}
-	}
 	if (!ins) return;
-	//var ins = document.getElementById ("install");
 	const manifest = ins.getAttribute ("manifest");
 	const packaged = (ins.getAttribute ("packaged") == "true")? "Package": "";
 	const appi = navigator.mozApps;
