@@ -4,7 +4,7 @@ P.onOrientationChange = function (callback) {
 	// });
 	var layout = undefined;
 	var ow = window.innerWidth;
-	var onResize = function () {
+	const onResize = function () {
 		var w = window.innerWidth;
 		if (w != ow) {
 			const lay = w>window.innerHeight?
